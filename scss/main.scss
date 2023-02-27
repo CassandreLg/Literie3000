@@ -1,0 +1,33 @@
+html{
+    font-size: 62.5%;
+}
+
+.container {
+    margin: 0 auto;
+
+    .navbar {
+        padding: 2rem 0;
+        text-align: center;
+        background-color: #144284;
+    
+        .logo {
+            width: 20rem;
+        }
+    }
+}
+
+.matelas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    justify-content: center;
+
+    .produit{
+        width: 300px;
+        padding: 2rem;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+

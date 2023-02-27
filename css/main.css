@@ -1,0 +1,31 @@
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  margin: 0 auto;
+}
+.container .navbar {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #144284;
+}
+.container .navbar .logo {
+  width: 20rem;
+}
+
+.matelas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 30%;
+  justify-content: center;
+}
+.matelas .produit {
+  width: 300px;
+  padding: 2rem;
+}
+.matelas .produit img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
