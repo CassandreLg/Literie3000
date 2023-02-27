@@ -32,6 +32,8 @@ h2 {
     text-align: center;
 }
 
+// PARTIE ACCUEIL
+
 .ajoutproduit {
     display: flex;
     flex-basis: 50%;
@@ -49,8 +51,11 @@ h2 {
         width: 50%;
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
         p {
+            margin: 0;
             font-family: 'Nunito', sans-serif;
             font-weight: 800;
             text-align: center;
@@ -82,6 +87,9 @@ h2 {
     }
 }
 
+
+// PARTIE AJOUT DE MATELAS
+
 .form-group {
     padding-top: 2rem;
     label {
@@ -110,4 +118,38 @@ form{
         border: none;
         border-radius: 10px;
     }
+}
+
+
+// PARTIE AFFICHAGE D'UN MATELAS
+
+.produit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        max-width: 300px;
+    }
+    p{
+        font-size: 2rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .bouton {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        color: white;
+        background-color: #144284;
+        border: none;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
 }

@@ -29,27 +29,24 @@ if (isset($_GET["id"])) {
 }
 
 
-?>
+// METHODE POUR SUPPRIMER DE LA BDD
 
 
-<!-- PARTIE AFFICHAGE -->
+    // Requête de supression de la ligne de ma base de données
 
-<h1><?= $data["nom"] ?></h1>
-<?php
-if ($find) {
-?>
-    <div class="produit">
-        <img src="<?= $data["photo"] ?>" alt="" class="image-produit">
-        <p><?= $data["prix"] ?> €</p>
-        <p><?= $data["promo"] ?> €</p>
+    // Connexion à la base literie3000
+    $dsn = "mysql:host=localhost;dbname=literie3000";
+    $db = new PDO($dsn, "root", "");
 
-        <a href="delete.php" class="bouton"> Supprimer le produit </a>
+    // On prépare la méthode
+    $suppr = $db->prepare("DELETE FROM `produits` WHERE `id` = :id");
 
-        <form action="" method="post">
-            <input type="submit" value="Modifier le produit" class="bouton">
-        </form>
-    </div>
+    $suppr->bindParam(":id", $id);
 
+    // On exécute la méthode
+    if ($suppr->execute()) {
+        // La requête s'est bien déroulée, on affiche un message de confirmation
+        echo ("Le produit a été supprimé");
+    }
 
-<?php
-}
+    ?>

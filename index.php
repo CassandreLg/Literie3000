@@ -23,6 +23,7 @@ include("templates/header.php");
         <img src="img/img.jpg" alt="Belle image de lit wahou">
     </div>
     <div class="bouton">
+    <h1>Ajouter un produit</h1>
     <a href="ajout_produit.php"> <p>+</p> </a>
     </div>
 
