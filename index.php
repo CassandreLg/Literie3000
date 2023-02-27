@@ -18,6 +18,17 @@ $produits = $query->fetchAll(PDO::FETCH_ASSOC);
 include("templates/header.php");
 
 ?>
+<div class="ajoutproduit">
+    <div class="image">
+        <img src="img/img.jpg" alt="Belle image de lit wahou">
+    </div>
+    <div class="bouton">
+    <a href="ajout_produit.php"> <p>+</p> </a>
+    </div>
+
+</div>
+
+
 <h1>Découvrez nos matelas</h1>
 <div class="matelas">
     <?php
@@ -25,9 +36,9 @@ include("templates/header.php");
     ?>
         <div class="produit">
             <h2>
-                <a href="produit.php?id=<?= $produit["id"] ?>"><?= $produit["nom"] ?></a>
+                <?= $produit["nom"] ?>
             </h2>
-            <img src="<?= $produit["photo"] ?>" alt="" class="recipe-picture">
+            <a href="produit.php?id=<?= $produit["id"] ?>"> <img src="<?= $produit["photo"] ?>" alt="" class="recipe-picture"> </a>
         </div>
     <?php
     }
