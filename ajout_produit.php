@@ -61,7 +61,7 @@ if (!empty($_POST)) {
 
 <form action="" method="post" >
     <div class="form-group">
-        <label for="inputName">Nom du produit :</label>
+        <label for="inputName">Nom :</label>
         <input type="text" id="inputName" name="nom" value="<?= isset($name) ? $nom : "" ?>">
         <?php
         if (isset($errors["name"])) {
@@ -73,7 +73,7 @@ if (!empty($_POST)) {
     </div>
 
     <div class="form-group">
-        <label for="inputPhoto">Photo du produit :</label>
+        <label for="inputPhoto">Photo :</label>
         <input type="text" id="inputPhoto" name="photo" value="<?= isset($photo) ? $photo : "" ?>">
         <?php
         if (isset($errors["photo"])) {
@@ -97,7 +97,7 @@ if (!empty($_POST)) {
     </div> -->
 
     <div class="form-group">
-        <label for="inputPrix">Prix du produit :</label>
+        <label for="inputPrix">Prix :</label>
         <input type="text" id="inputPrix" name="prix" value="<?= isset($prix) ? $prix : "" ?>">
         <?php
         if (isset($errors["prix"])) {

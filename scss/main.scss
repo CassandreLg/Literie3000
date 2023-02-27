@@ -83,10 +83,31 @@ h2 {
 }
 
 .form-group {
+    padding-top: 2rem;
     label {
         font-size: 2rem;
         font-family: 'Nunito', sans-serif;
         font-weight: 500;
     }
+}
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .bouton {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 3rem;
+        display: inline-block;
+        margin-top: 4rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        color: white;
+        background-color: #144284;
+        border: none;
+        border-radius: 10px;
+    }
 }
